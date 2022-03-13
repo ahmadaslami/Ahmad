@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssform.html</title>
+    <style>
+        body {
+            font-family: Calibri, Arial, Helvetica, sans-serif;
+            background-color: pink;
+        }
+        
+        .container {
+            padding: 50px;
+            background-color: lightblue;
+        }
+        
+        input[type=text],
+        textarea,
+        input[type=email],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+        
+        input[type=text]:focus,
+        textarea :focus,
+        input[type=email]:focus,
+        input[type=password]:focus {
+            background-color: orange;
+            outline: none;
+        }
+        
+        .div {
+            padding: 10px 0;
+        }
+        
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+        
+        button {
+            background-color: #4caf50;
+            color: white;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            padding: 16px 20px;
+            width: 100%;
+            opacity: 0.9;
+        }
+        
+        button:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="Reg-done.html">
+        <div class="container">
+            <center>
+                <h1>Registration Form</h1>
+            </center>
+
+
+            <hr>
+            <label for="firstname"> Firstname</label>
+            <input type="text" id="firstname" name="ftname" placeholder="Firstname" size="15" required />
+
+
+            <label for="middlename"> Middlename</label>
+            <input type="text" id="middlename" name="mtname" placeholder="Midlename" size="15" required />
+
+            <label for="lastname"> Lastname</label>
+            <input type="text" id="lastname" name="ltname" placeholder="Lastname" size="15" required />
+
+            <label for="course"> Course: </label>
+            <select name="course" id="course" required>
+                <option value="Java">Java</option> 
+                <option value="Php">Php</option> 
+                <option value="JavaScript">JavaSript</option> 
+                <option value="Python">Python</option> 
+            </select>
+            <div>
+
+                <label for="gender"> Gender :</label>
+
+                <br>
+                <input type="radio" id="gender" value="Male" name="gender" checked> Male
+                <input type="radio" id="gender" value="Female" name="gender" checked> Female
+                <input type="radio" id="gender" value="Other" name="gender" checked> Other
+
+            </div>
+
+            <label for="Phone"> Phone</label>
+            <input type="text" name="country code" placeholder="Country Code" value="+91" size="2" />
+            <input type="text" id="Phone" name="phone" placeholder="phone no." size="10" / required />
+
+            <label for="address"> Address: </label>
+            <textarea placeholder="Current Address">
+
+            </textarea>
+            <label for="email"> Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email">
+
+            <label for="password"> Password</label>
+            <input type="password" id="passwoed" name="password" placeholder="Enter Password" size="8">
+
+            <label for="re-type password"> Re-type Passwoed</label>
+            <input type="password" id="re-type password" name="re-type password" placeholder="Retype Password" size="8">
+
+            <button type="submit" value="submit">Register</button>
+
+
+
+
+    </form>
+</body>
